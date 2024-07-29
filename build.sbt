@@ -25,7 +25,7 @@ libraryDependencies += "org.projectlombok" % "lombok" % "1.18.24" % "provided"
 
 
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.1" % "test"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.19" % "test"
 
 //fix version conflict
 ThisBuild / libraryDependencySchemes ++= Seq(

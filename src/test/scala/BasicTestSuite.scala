@@ -7,6 +7,9 @@ import org.apache.spark.sql.streaming.Trigger
 import org.apache.spark.sql.{Dataset, Encoder, Encoders, SparkSession}
 import org.scalatest.funsuite.AnyFunSuiteLike
 
+/**
+ * vm options --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED
+ */
 case class Model(id: Long)
 
 class BasicTestSuite extends AnyFunSuiteLike {
